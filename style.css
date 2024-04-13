@@ -1,0 +1,50 @@
+/* Reset some default margins and padding */
+body, h1, h2, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: 'Times New Roman', serif; /* Use Times New Roman font */
+    line-height: 1.6;
+    background: white; /* Set background to white for minimalism */
+    color: black; /* Ensure text is black for high contrast */
+    padding: 20px;
+}
+
+/* Styling for the recipe container */
+.recipe {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container on the page */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Styling for headers to increase readability */
+/* make headers center aligned */
+h1, h2 {
+    margin-bottom: 0.8em; /* Space below headers */
+    color: black; /* Keep headers black */
+    text-align: center; /* Center align headers */
+}
+
+/* List styling for ingredients and instructions */
+ul, ol {
+    margin-left: 20px; /* Indent lists for clarity */
+    padding-bottom: 1em; /* Space below lists */
+}
+
+/* Specific styles for printing */
+@media print {
+    body {
+        background: none; /* Remove background when printing */
+        margin: 0; /* Remove margin when printing */
+        padding: 0; /* Remove padding when printing */
+    }
+    .recipe {
+        margin: 0; /* Remove margin for recipe container in print */
+        padding: 10px; /* Reduce padding in print */
+        max-width: 100%; /* Allow recipe container to use full width when printing */
+        box-shadow: none; /* Remove shadow in print */
+    }
+}
